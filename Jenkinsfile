@@ -40,7 +40,7 @@ pipeline {
         stage('Deploy Container') {
             steps {
                 sh '''
-                docker run -d -p 3000:3000 \
+                docker run -d -p 4000:4000 \
                 --name $CONTAINER_NAME \
                 $IMAGE_NAME
                 '''
